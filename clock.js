@@ -2,6 +2,15 @@ window.onload = function (){
 
 var clock = document.getElementById('clock');
 
+writeDate(); //selleks, et ei oleks algul näha 0:0:0
+
+  //käivitan intervalli
+window.setInterval(function(){
+  //iga 500ms tagant käivitan writeDate'i
+  writeDate();
+
+}, 500);
+
 writeDate();
 
 
